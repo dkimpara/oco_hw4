@@ -1,25 +1,46 @@
 import numpy as np
 from numpy import linalg
 
+from scipy.stats import ortho_group
+# Return a random orthogonal matrix, drawn from the O(N) Haar distribution (the only uniform distribution on O(N)).'''
 
-def generate_A(n,d):
-    pass
+
+def generate_A(n, d):
+    U = ortho_group.rvs(n)
+    V = ortho_group.rvs(d)
+    D = np.diagflat(np.flip(np.linspace(1 / np.sqrt(100), 1, min(n, d))))
+    D = np.vstack((D, np.zeros([n - d, d])))
+    return U @ D @ V
 
 
-def generate_bt(A, sigma, n, d):
+def generate_bt(A, sigma, n, d, x_gen):
     '''generator for b_t'''
-    x = xstar(sigma, d)
     while True:
         w = np.random.normal(0, 10 ** (-3), n)
-        yield np.matmul(A, next(x)) + w
+        yield A @ next(x_gen) + w
 
 
-def xstar(sigma, d):
+def xstar1(sigma, d):
     '''generator for x_t^*'''
     x = np.zeros(d)
     while True:
         x += sigma * sample_n_sphere_surface(d)
         yield x
+
+
+def xstar2(d):
+    '''generator for x_t^* for question 2'''
+    x = np.zeros(d)
+    while True:
+        yield x
+        x = xstar2_helper(x, d)
+
+
+def xstar2_helper(x, d):
+    step = sample_n_sphere_surface(d)  # step size 1
+    while linalg.norm(x + step) >= 1.0:  # resample the step
+        step = sample_n_sphere_surface(d)
+    return x + step
 
 
 def sample_n_sphere_surface(ndim, norm_p=2):
