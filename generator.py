@@ -13,7 +13,7 @@ def generate_A(n, d):
     return U @ D @ V
 
 
-def generate_bt(A, sigma, n, d, x_gen):
+def generate_bt(A, n, x_gen):
     '''generator for b_t'''
     while True:
         w = np.random.normal(0, 10 ** (-3), n)
