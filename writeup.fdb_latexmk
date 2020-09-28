@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1601327978 "writeup.tex" "writeup.pdf" "writeup" 1601327978
+["pdflatex"] 1601336448 "writeup.tex" "writeup.pdf" "writeup" 1601336448
   "/etc/texmf/web2c/texmf.cnf" 1535948850 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -90,8 +90,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1503343927 31343 93828589fb0cea665e553ee5a17ad2d4 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1535948853 1522064 5a1ab126716ec9ca89ecc3e4d64ccf2c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1574010416 718488 b6f2687590042bed6f8cf42fbe13a578 ""
-  "writeup.aux" 1601327978 79 406ea1f40476a616a9236234a4c34302 ""
-  "writeup.tex" 1601327978 2856 f6d50e6a97b09d3a71dafd8213e17703 ""
+  "figures/hw4-p1-ii.png" 1601336447 15273 44d6c4bb15727f07b57a7632437ae977 ""
+  "writeup.aux" 1601336448 254 81433a277b76fa8d9421980ab17c2d51 ""
+  "writeup.tex" 1601336439 3170 6eaa6fc32eb1a5ba13e00b6ed9bb0a62 ""
   (generated)
   "writeup.pdf"
   "writeup.aux"

@@ -46,7 +46,7 @@
 \label{sec:Problem 1}
 
 \begin{enumerate}
-    \item [i)] Yes, the cost is strongly convex. Write $g(x) = \frac{1}{2}\norm{x}_2^2$, and $h_t(x) = Ax - b_t$. Then $g$ is $\mu=1$-strongly convex, and $h_t$ is affine for all $t$, so our cost function is the composition $f = g \circ h_t$, which is also 1-strongly convex.
+    \item [i)] Yes, the cost is strongly convex. Write $f_t(x) = \frac{1}{2}\norm{Ax - b_t}_2^2$, and $h_t(x) = Ax - b_t$. Then $f_t$ is $\mu$-strongly convex if the smallest eigenvalue of its Hessian $\nabla^2 f_t(x) = A$ is positive, with $\mu$ equal to that eigenvalue. By construction, then, $\mu = 1/\sqrt{\kappa}$.
 
     \item[ii)] We know from class that for convergence, we require the step size $\alpha$ to be in the range $(0, 2/L]$. Since $L$ is the Lipschitz constant of $\nabla f = Ax - b_t$, we have that since
 
@@ -54,13 +54,13 @@
             \norm{Ax - b_t - (Ay - b_t)} = \norm{Ax - Ay} \le \norm{A} \norm{x - y},
         \end{equation*}
 
-        that $L \le \norm{A} = 1$, since the largest singular value of $A$ is $1$. Thus we must pick $\alpha \in (0, 2]$. The bound we derived in class is in terms of
+        that $L \le \norm{A} = 1$, since the largest singular value of $A$ is $1$. Thus we must pick $\alpha \in (0, 2]$. The bound we derived in class uses 
 
         \begin{equation*}
-            \rho = \max \lbrace \abs{ 1 - \alpha \mu}, \abs{ 1 - \alpha L } \rbrace = \abs{ 1 - \alpha}
+            \rho = \max \lbrace \abs{ 1 - \alpha \mu}, \abs{ 1 - \alpha L } \rbrace = \max \lbrace \abs{ 1 - \alpha/\sqrt{\kappa}}, \abs{ 1 - \alpha } \rbrace.
         \end{equation*}
 
-        since $\mu = L = 1$ for our problem. Then the bound at step $t$ is
+        This gives the finite bound
 
         \begin{equation*}
             \norm{x_t - x_t^*} \le \rho^t \norm{x_0 - x_0^*} + \sigma \sum_{i=0}^t \rho^i = \rho^t \norm{x_0 - x_0^*} + \frac{1 - \rho^{t}}{1-\rho}
@@ -72,7 +72,16 @@
             \limsup_{t \to \infty} \norm{x_t - x_t^*} \le \frac{1}{1 - \rho}.
         \end{equation*}
 
-        Thus we have a tradeoff: if we pick $\alpha$ to be near $1$, then $\rho$ is small, and our asymptotic limit is good, but the initial error $\norm{x_0 - x_0^*}$ affects our estimate for longer. If we pick $\alpha$ to be near $0$, then the initial error decays rapidly, but the asymptotic error is controlled very weakly.
+        With this specific problem, since $\kappa = 100$, we have that for an arbitrary pick of $\alpha = 1$ that $rho=99/100$, so the asymptotic bound is $1/(1-\rho) = 100$. As seen in Figure \ref{fig:p1ii}, the tracking error does not appear to typically approach either the finite or asymptotic bounds here.
+
+        \begin{figure}[h]
+        \begin{center}
+            \includegraphics[scale=0.5]{figures/hw4-p1-ii.png}
+        \end{center}
+        \caption{Tracking error of one run of online gradient descent vs. finite bounds}
+        \label{fig:p1ii}
+        \end{figure}
+        
 
 \end{enumerate}
 
