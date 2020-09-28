@@ -16,12 +16,13 @@ def generate_A(n, d):
 def generate_bt(A, n, x_gen):
     '''generator for b_t'''
     while True:
+        xstar = next(x_gen)
         w = np.random.normal(0, 10 ** (-3), n)
-        yield A @ next(x_gen) + w
+        yield A @ xstar + w, xstar
 
 
 def xstar1(sigma, d):
-    '''generator for x_t^*'''
+    '''generator for x_t^* for q1'''
     x = np.zeros(d)
     while True:
         x += sigma * sample_n_sphere_surface(d)
