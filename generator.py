@@ -25,8 +25,8 @@ def xstar1(sigma, d):
     '''generator for x_t^* for q1'''
     x = np.zeros(d)
     while True:
-        x += sigma * sample_n_sphere_surface(d)
         yield x
+        x += sigma * sample_n_sphere_surface(d)
 
 
 def xstar2(d):
