@@ -13,19 +13,22 @@ def gradient_descent_experiment(A, alpha, n, d, sigma, iters=100, projected=Fals
 
     b_gen = gen.generate_bt(A, n, xstar_gen)
     x_t = np.ones(d)
+    b_t, xstar_t = next(b_gen)
+
+    tracking_error.append(linalg.norm(x_t - xstar_t))
 
     for i in range(iters):
-        b_t, xstar_t = b_gen(next)
+        b_t, xstar_t = next(b_gen)
         x_t = x_t - alpha * gradient(A, x_t, b_t)
         if projected:  # do projection step in pgd
-            project_unit_ball(x_t)
+            x_t = project_unit_ball(x_t)
         tracking_error.append(linalg.norm(x_t - xstar_t))
 
     return tracking_error
 
 
 def gradient(A, x_t, b_t):
-    return np.transpose(A) @ (A @ x_t - b_t)
+    return A.T @ (A @ x_t - b_t)
 
 
 def project_unit_ball(x):
