@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.3)  29 SEP 2020 12:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.3)  29 SEP 2020 12:39
 entering extended mode
 **./writeup.tex
 (writeup.tex
@@ -276,35 +276,60 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen155
 \SOUL@ulht=\dimen156
 )
+(C:\Users\dhamm\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count110
+\lst@gtempboxa=\box34
+\lst@token=\toks37
+\lst@length=\count111
+\lst@currlwidth=\dimen157
+\lst@column=\count112
+\lst@pos=\count113
+\lst@lostspace=\dimen158
+\lst@width=\dimen159
+\lst@newlines=\count114
+\lst@lineno=\count115
+\lst@maxwidth=\dimen160
+
+(C:\Users\dhamm\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count116
+\lst@skipnumbers=\count117
+\lst@framebox=\box35
+)
+(C:\Users\dhamm\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
 (writeup.aux)
 \openout1 = `writeup.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
 
 (C:\Users\dhamm\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
-\scratchdimen=\dimen157
-\scratchbox=\box34
-\nofMPsegments=\count111
-\nofMParguments=\count112
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count113
-\MPscratchDim=\dimen158
-\MPnumerator=\count114
-\makeMPintoPDFobject=\count115
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count118
+\scratchdimen=\dimen161
+\scratchbox=\box36
+\nofMPsegments=\count119
+\nofMParguments=\count120
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count121
+\MPscratchDim=\dimen162
+\MPnumerator=\count122
+\makeMPintoPDFobject=\count123
+\everyMPtoPDFconversion=\toks39
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -353,12 +378,13 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 49.
+\c@lstlisting=\count124
+LaTeX Font Info:    Try loading font information for U+msa on input line 50.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 49.
+LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -366,40 +392,94 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <figures/hw4-p1-ii.png, id=1, 384.43625pt x 264.99pt>
 File: figures/hw4-p1-ii.png Graphic file (type png)
 <use figures/hw4-p1-ii.png>
-Package pdftex.def Info: figures/hw4-p1-ii.png  used on input line 79.
+Package pdftex.def Info: figures/hw4-p1-ii.png  used on input line 80.
 (pdftex.def)             Requested size: 192.21765pt x 132.49467pt.
 <figures/hw4-p1-iii.png, id=3, 390.45876pt x 264.99pt>
 File: figures/hw4-p1-iii.png Graphic file (type png)
 <use figures/hw4-p1-iii.png>
-Package pdftex.def Info: figures/hw4-p1-iii.png  used on input line 87.
+Package pdftex.def Info: figures/hw4-p1-iii.png  used on input line 88.
 (pdftex.def)             Requested size: 195.2289pt x 132.49467pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+(C:\Users\dhamm\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
 [1
 
 {C:/Users/dhamm/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figures/h
-w4-p1-ii.png>] [2 <./figures/hw4-p1-iii.png>] (writeup.aux) ) 
+w4-p1-ii.png>] (generator.py
+Overfull \hbox (348.20172pt too wide) in paragraph at lines 5--8
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][] 
+ []
+
+
+Overfull \hbox (30.95227pt too wide) in paragraph at lines 11--12
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
+ [2 <./figures/hw4-p1-iii.png>]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 42.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 42.
+
+Overfull \hbox (52.10223pt too wide) in paragraph at lines 51--52
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (optimizer.py
+Overfull \hbox (101.45215pt too wide) in paragraph at lines 6--7
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[3])
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[4] (writeup.aux) ) 
 Here is how much of TeX's memory you used:
- 4255 strings out of 492973
- 54936 string characters out of 3135933
- 133990 words of memory out of 3000000
- 8027 multiletter control sequences out of 15000+200000
- 11973 words of font info for 44 fonts, out of 3000000 for 9000
+ 6121 strings out of 492973
+ 79231 string characters out of 3135933
+ 367608 words of memory out of 3000000
+ 9863 multiletter control sequences out of 15000+200000
+ 12925 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,53p,799b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on writeup.pdf (2 pages, 115043 bytes).
+ 41i,7n,74p,799b,1878s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmti12.pfb>
+Output written on writeup.pdf (4 pages, 142792 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
+ 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
