@@ -10,6 +10,8 @@
 \usepackage{soul}
 \usepackage{listings}
 
+\lstset{breaklines=true}
+
 \DeclareMathOperator{\C}{\mathbb{C}}
 \DeclareMathOperator{\I}{\mathbb{I}}
 \DeclareMathOperator{\N}{\mathbb{N}}
@@ -63,17 +65,18 @@
 
         This gives the finite bound
 
-        \begin{equation*}
-            \norm{x_t - x_t^*} \le \rho^t \norm{x_0 - x_0^*} + \sigma \sum_{i=0}^t \rho^i = \rho^t \norm{x_0 - x_0^*} + \frac{1 - \rho^{t}}{1-\rho}
-        \end{equation*}
+        \begin{equation}
+            \label{eq:bounds}
+            \norm{x_t - x_t^*} \le \rho^t \norm{x_0 - x_0^*} + \sigma \sum_{i=0}^t \rho^i = \rho^t \norm{x_0 - x_0^*} + \sigma \frac{1 - \rho^{t}}{1-\rho}
+        \end{equation}
 
         with the asymptotic result
 
         \begin{equation*}
-            \limsup_{t \to \infty} \norm{x_t - x_t^*} \le \frac{1}{1 - \rho}.
+            \limsup_{t \to \infty} \norm{x_t - x_t^*} \le \frac{\sigma}{1 - \rho}.
         \end{equation*}
 
-        With this specific problem, since $\kappa = 100$, we have that for an arbitrary pick of $\alpha = 1$ that $\rho=99/100$, so the asymptotic bound is $1/(1-\rho) = 100$. As seen in Figure \ref{fig:p1ii}, the tracking error does not appear to typically approach either the finite or asymptotic bounds here.
+        With this specific problem, for $\sigma = 1$, since $\kappa = 100$, we have that for an arbitrary pick of $\alpha = 1$ that $\rho=91/100$, so the asymptotic bound is $1/(1-\rho) = 10$. As seen in Figure \ref{fig:p1ii}, the tracking error does not appear to typically approach either the finite or asymptotic bounds here.
 
         \begin{figure}[h]
         \begin{center}
@@ -82,28 +85,39 @@
         \caption{Tracking error of one run of online gradient descent vs. finite bounds}
         \label{fig:p1ii}
         \end{figure}
-    \item [iii)]
+    \item [iii)] In Figure \ref{fig:p1iii} we display a run using $\sigma=0.1$ vs. its corresponding bound, as well as a run using $\sigma=2.0$ using its bound. Since the optimal value moves around more when $\sigma$ is larger, we are unsurprised to see both the bound and the tracking error lowered for smaller $\sigma$.
+
     	\begin{figure}[h]
     		\begin{center}
     			\includegraphics[scale=0.5]{figures/hw4-p1-iii.png}
     		\end{center}
-    		\caption{Tracking error of one run of online gradient descent vs. finite bounds for $\sigma = 0.1$ and $\sigma = 2.0$. }
+            \caption{Tracking error of one run of online gradient descent vs. finite bounds for $\sigma = 0.1$ and $\sigma = 2.0$. We display the asymptotic error for $\sigma=0.1$ since it is visible on the figure. For $\sigma=2$, the bound converges to $20$, which skews the axis too much.}
     		\label{fig:p1iii}
     	\end{figure}
     
 
 \end{enumerate}
 
+\section*{Problem 2}%
+\label{sec:Problem 2}
 
+We claimed in class that the bounds in Equation \ref{eq:bounds} holds for projected gradient descent as well. We find that the performance of PGD falls well within these bounds, perhaps simply because the maximum distance between any two points on the hypersphere is $2$, which we drew in Figure \ref{fig:p2} as a solid dashed line. To actually evaluate the effectiveness of the algorithm then, we compared the tracking bounds to the expected distance between two
+uniformly randomly selected points on the 5-dimensional hypersphere (referring to this formula on StackExchange: https://math.stackexchange.com/q/2366593). The tracking error is indeed consistently below this theoretical baseline, confirming that our algorithm is working better than chance.
 
-\section*{Code}%
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[scale=0.5]{figures/hw4-p2.png}
+\end{center}
+\caption{Tracking error of one run of projected online gradient descent vs. finite bounds and some theoretical quantities related to points on a 5-dimensional hypersphere.}
+\label{fig:p2}
+\end{figure}
+
+\section*{Code}
 \label{sec:Code}
-\subsection*{Generator}
+
+\subsection*{generator.py}
 \lstinputlisting[language=Python]{generator.py}
-
-\subsection*{Optimizer}
-\lstinputlisting[language=Python]{optimizer.py}\\
-
-\subsection*{Experiment}
+\subsection*{optimizer.py}
+\lstinputlisting[language=Python]{optimizer.py}
 
 \end{document}
