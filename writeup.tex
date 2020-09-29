@@ -72,7 +72,7 @@
             \limsup_{t \to \infty} \norm{x_t - x_t^*} \le \frac{1}{1 - \rho}.
         \end{equation*}
 
-        With this specific problem, since $\kappa = 100$, we have that for an arbitrary pick of $\alpha = 1$ that $rho=99/100$, so the asymptotic bound is $1/(1-\rho) = 100$. As seen in Figure \ref{fig:p1ii}, the tracking error does not appear to typically approach either the finite or asymptotic bounds here.
+        With this specific problem, since $\kappa = 100$, we have that for an arbitrary pick of $\alpha = 1$ that $\rho=99/100$, so the asymptotic bound is $1/(1-\rho) = 100$. As seen in Figure \ref{fig:p1ii}, the tracking error does not appear to typically approach either the finite or asymptotic bounds here.
 
         \begin{figure}[h]
         \begin{center}
@@ -81,7 +81,15 @@
         \caption{Tracking error of one run of online gradient descent vs. finite bounds}
         \label{fig:p1ii}
         \end{figure}
-        
+    \item [iii)]
+    	\begin{figure}[h]
+    		\begin{center}
+    			\includegraphics[scale=0.5]{figures/hw4-p1-iii.png}
+    		\end{center}
+    		\caption{Tracking error of one run of online gradient descent vs. finite bounds for $\sigma = 0.1$ and $\sigma = 2.0$. }
+    		\label{fig:p1iii}
+    	\end{figure}
+    
 
 \end{enumerate}
 
